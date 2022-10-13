@@ -1,0 +1,28 @@
+.logo-web {
+    margin-right: 93px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    color: var(--btn-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+
+    transform: rotate(0);
+    transition: transform 250ms var(--timing-function);
+}
+
+.logo-web:hover,
+.logo-web:focus {
+    transform: rotate(-15deg);
+}
+
+.studio {
+    color: var(--secondary-color);
+}
+
+.studio--footer {
+    color: var(--btn-active-color);
+}

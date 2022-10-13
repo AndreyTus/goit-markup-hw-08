@@ -1,0 +1,99 @@
+.title {
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.work-place-img {
+    display: flex;
+}
+
+.servise {
+    padding-top: 0;
+}
+
+.section {
+    display: flex;
+    padding-bottom: 94px;
+    padding-top: 94px;
+    margin: 0 auto;
+}
+
+.list-title h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.list-title p {
+    color: var(--paragraph-color);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.list-title {
+    display: flex;
+}
+
+.antenna::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--btn-background);
+    background-image: url(../images/antenna\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.clock::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--btn-background);
+    background-image: url(../images/clock\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.diagram::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--btn-background);
+    background-image: url(../images/diagram\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.astronaut::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--btn-background);
+    background-image: url(../images/astronaut\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visual-list {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    gap: 10px;
+}
+
+.visual-list:not(:first-child) {
+    margin-left: 30px;
+}
+
+.work-place-img li:not(:first-child) {
+    margin-left: 30px;
+}
