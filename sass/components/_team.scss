@@ -3,6 +3,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    text-align: center;
 }
 
 .list-team p {
@@ -12,14 +13,22 @@
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    text-align: center;
 }
 
 .list-team {
-    display: flex;
+    display: block;
+    padding-bottom: 60px;
+
+    @include desktop {
+        display: flex;
+    }
 }
 
 .team:not(:first-child) {
-    margin-left: 30px;
+    @include desktop {
+        margin-left: 30px;
+    }
 }
 
 .section-team {
@@ -28,15 +37,25 @@
 }
 
 .title-img {
-    margin-bottom: 50px;
-
+    margin-bottom: 30px;
+    padding-top: 60px;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em
 }
+
+@include desktop {
+    .title-img {
+        margin-bottom: 50px;
+        padding-top: 0;
+        font-size: 36px;
+        line-height: 1.16;
+    }
+}
+
 
 .team {
     text-align: center;
@@ -45,13 +64,30 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
+    margin-bottom: 30px;
+    
+
+    @include desktop {
+        margin-bottom: 0;
+        
+    }
 }
+
+// .team:not(:last-child) {
+//     margin-bottom: 30px;
+// }
 
 .social {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     justify-content: center;
     align-items: center;
+    
+
+    @include desktop {
+        margin-bottom: 30px;
+        padding-bottom: 0;
+    }
 }
 
 .social-link {
@@ -71,7 +107,7 @@
 }
 
 .social-link:not(:first-child) {
-    margin-left: 10px;
+        margin-left: 10px;
 }
 
 .link-icon {

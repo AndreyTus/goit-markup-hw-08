@@ -1,22 +1,39 @@
 .logo-web {
-    margin-right: 93px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     color: var(--btn-color);
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     text-decoration: none;
 
-    transform: rotate(0);
-    transition: transform 250ms var(--timing-function);
+    
+}
+@media screen and (min-width: 1200px) {
+    .logo-web {
+        margin-right: 93px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        color: var(--btn-color);
+        font-family: 'Raleway';
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        text-decoration: none;
+
+        transform: rotate(0);
+        transition: transform 250ms var(--timing-function);
+    }
 }
 
 .logo-web:hover,
 .logo-web:focus {
-    transform: rotate(-15deg);
+    @include desktop {
+        transform: rotate(-15deg);
+    }
 }
 
 .studio {
