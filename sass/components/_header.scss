@@ -13,6 +13,24 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .header {
+        padding-right: 15px;
+        background-color: var(--header-color);
+        color: var(--secondary-color);
+        text-decoration: none;
+
+        margin: auto;
+        border-bottom: 1px solid var(--border-color);
+        height: 80px;
+        &-nav {
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .header {
         padding-right: 15px;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,20 +27,61 @@
                     <li class="header-site-info"><a class="link" href="Контакти">Контакти</a></li>
                 </ul>
                 <ul class="contacts">
-                    <li class="header-site-info">
+                    <li class="header-site-info info-con">
                         <a class="link" href="mailto:info@devstudio.com">
                             <svg class="contacts-icon" width="16" height="12">
                                 <use href="./images/sprite-contacts.svg#icon-envelope"></use>
                             </svg>info@devstudio.com</a>
                     </li>
-                    <li class="header-site-info">
+                    <li class="header-site-info info-con">
                         <a class="link" href="tel:+380961111111">
                             <svg class="contacts-icon" width="10" height="16">
                                 <use href="./images/sprite-contacts.svg#icon-phone"></use>
                             </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
+                <button type="button" class="open-menu js-open-menu" aria-label="перемикач меню" aria-expanded="false">
+                    <svg class="mobile-close" height="16" width="24">
+                        <use class="icon-menu" href="./images/sprite-close.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
             </nav>
+            <div class="mobile-menu">
+                <div class="mobile-box js-menu-container">
+                    <button type="button" aria-label="перемикач меню" class="close-menu js-close-menu">
+                        <svg class="mobile-close" height="16" width="24">
+                            <use class="icon-close" href="./images/sprite-close.svg#icon-close_24px"></use>
+                        </svg>
+                    </button>
+                    <ul class="mobile-site">
+                        <li class="mobile-info"><a class="link focus" href="./index.html">Студія</a></li>
+                        <li class="mobile-info"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+                        <li class="mobile-info"><a class="link" href="Контакти">Контакти</a></li>
+                    </ul>
+                    <ul class="mobile-contacts">
+                        <li class="mobile-tel">
+                            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-email mail">
+                            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-social">
+                        <li class="social-site">
+                            <a class="link" href="#">Instagram</a>
+                        </li>
+                        <li class="social-site">
+                            <a class="link" href="#">Twitter</a>
+                        </li>
+                        <li class="social-site">
+                            <a class="link" href="#">Facebook</a>
+                        </li>
+                        <li class="social-site">
+                            <a class="link" href="#">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -106,7 +148,9 @@
                 <h2 class="title-img">Наша команда</h2>
                 <ul class="list-team">
                     <li class="team">
-                        <img src="./img/img-4.jpg" alt="Ігор Дем'яненко" height="260" width="270">
+                        <img srcset="./img/img-4-mob-x1.jpeg x1,
+                        ./img/img-4-mob-x2.jpeg x2" 
+                        src="./img/img-4-mob-x1.jpeg" alt="Ігор Дем'яненко">
                         <h3>Ігор Дем'яненко</h3>
                         <p>Product Designer</p>
                         <div>
@@ -131,7 +175,9 @@
                         </div>
                     </li>
                     <li class="team">
-                        <img src="./img/img-5.jpg" alt="Ольга Рєпіна" height="260" width="270">
+                        <img srcset="./img/img-5-mob-x1.jpeg x1,
+                        ./img/img-5-mob-x2.jpeg x2" 
+                        src="./img/img-5-mob-x1.jpeg" alt="Ольга Рєпіна">
                         <h3>Ольга Рєпіна</h3>
                         <p>Frontend Developer</p>
                         <div>
@@ -156,7 +202,9 @@
                         </div>
                     </li>
                     <li class="team">
-                        <img src="./img/img-6.jpg" alt="Микола Тарасов" height="260" width="270">
+                        <img srcset="./img/img-6-mob-x1.jpeg x1,
+                        ./img/img-6-mob-x2.jpeg x2" 
+                        src="./img/img-6-mob-x1.jpeg" alt="Микола Тарасов">
                         <h3>Микола Тарасов</h3>
                         <p>Marketing</p>
                         <div>
@@ -181,7 +229,9 @@
                         </div>
                     </li>
                     <li class="team">
-                        <img src="./img/img-7.jpg" alt="Михайло Єрмаков" height="260" width="270">
+                        <img srcset="./img/img-7-mob-x1.jpeg x1,
+                        ./img/img-7-mob-x2.jpeg x2" 
+                        src="./img/img-7-mob-x1.jpeg" alt="Михайло Єрмаков">
                         <h3>Михайло Єрмаков</h3>
                         <p>UI Designer</p>
                         <div>
@@ -284,15 +334,15 @@
                 </ul>
             </div>
             <div class="footer-input">
-                    <label class="email-title" for="email-foot">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
-                    <form class="foot-mail" action="*">
-                        <input class="input-size" type="email" name="email" id="email-foot" placeholder="email">
-                        <button type="submit" class="btn">Підписатися
-                            <svg class="submit-icon" height="24" width="24">
-                                <use href="./images/sprite-close.svg#icon-icon-send"></use>
-                            </svg>
-                        </button>
-                    </form>
+                <label class="email-title" for="email-foot">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
+                <form class="foot-mail" action="*">
+                    <input class="input-size" type="email" name="email" id="email-foot" placeholder="email">
+                    <button type="submit" class="btn">Підписатися
+                        <svg class="submit-icon" height="24" width="24">
+                            <use href="./images/sprite-close.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
         </div>
     </footer>
@@ -340,10 +390,11 @@
                 <div class="accept">
                     <input type="checkbox" id="accept" name="accept" required>
                     <label class="accept-p" for="accept"><span class="box-icon">
-                        <svg class="icon-vector" height="8" width="11">
-                            <use href="./images/sprite-close.svg#icon-vector"></use>
-                        </svg>
-                    </span>Погоджуюся з розсилкою та приймаю <span><a class="accept-a" href="#">Умови
+                            <svg class="icon-vector" height="8" width="11">
+                                <use href="./images/sprite-close.svg#icon-vector"></use>
+                            </svg>
+                        </span><span class="modal-p">Погоджуюся з розсилкою та приймаю <a class="accept-a"
+                                href="#">Умови
                                 договору</a></span></label>
                 </div>
                 <button type="submit" class="btn">Відправити</button>
@@ -351,6 +402,10 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/modal-menu.js"></script>
 </body>
 
 </html>
