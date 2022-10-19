@@ -70,17 +70,20 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0 0 4px 4px;
-    margin-bottom: 30px;
-
-    @include tablet {
-        margin: 30px;
-        width: calc((100% - 120px)/2);
-    }    
+    margin-bottom: 30px;  
 
     @include desktop {
         margin-bottom: 0;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .team {
+        max-width: calc(50% - 15px);
+        margin-right: 0;
+    }
+}
+
 
 .social {
     display: flex;

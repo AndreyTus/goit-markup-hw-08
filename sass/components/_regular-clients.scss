@@ -93,3 +93,9 @@
         transform: scale(1.25);
     }
 }
+
+@include desktop {
+    .regular {
+        padding-bottom: 94px;
+    }
+}

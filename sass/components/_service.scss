@@ -23,13 +23,14 @@
 @media screen and (min-width: 1200px) {
     .servise {
         padding-top: 0;
+        padding-bottom: 94px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .section {
         display: flex;
-        padding-bottom: 94px;
+        // padding-bottom: 94px;
         padding-top: 94px;
         margin: 0 auto;
     }
@@ -65,14 +66,21 @@
     }
 }
 
-.list-title {
-    padding-top: 60px;
-    margin-bottom: 60px;
-    
-    @include tablet {
+@media screen and (max-width: 767px) {
+    .list-title {
+        margin-bottom: 60px;
+    }
+    .section {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+    .list-title {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        gap: 30px;
+        padding-top: 60px;
     }
 }
 
@@ -128,16 +136,21 @@
 
 
 .visual-list {
-    height: 226px;
     gap: 10px;
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .visual-list {
         margin-bottom: 30px;
         display: -ms-flexbox;
         display: block;
-        width: 270px;
+        max-width: calc(50% - 15px);
         gap: 10px;
     }
 }
