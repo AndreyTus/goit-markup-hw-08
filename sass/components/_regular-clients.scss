@@ -1,10 +1,14 @@
 .regular h2 {
-    padding-bottom: 50px;
-    padding-top: 60px;
+    margin-bottom: 50px;
+    // padding-top: 60px;
     font-weight: 700;
     font-size: 28px;
     line-height: 1.18;
     text-align: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+    }
 
     @include desktop {
         padding-top: 0;
@@ -19,7 +23,6 @@
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        padding-bottom: 60px;
 
     @include desktop {
         display: flex;
@@ -41,7 +44,7 @@
     }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .box {
         height: 92px;
         width: calc((100% - 4 * 15px) / 3);
@@ -91,6 +94,13 @@
     
     @include desktop {
         transform: scale(1.25);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .regular {
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 

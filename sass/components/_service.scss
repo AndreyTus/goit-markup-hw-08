@@ -30,7 +30,7 @@
 @media screen and (min-width: 1200px) {
     .section {
         display: flex;
-        // padding-bottom: 94px;
+        padding-bottom: 94px;
         padding-top: 94px;
         margin: 0 auto;
     }
@@ -68,9 +68,7 @@
 
 @media screen and (max-width: 767px) {
     .list-title {
-        margin-bottom: 60px;
-    }
-    .section {
+        padding-bottom: 60px;
         padding-top: 60px;
     }
 }
@@ -81,6 +79,7 @@
         flex-wrap: wrap;
         gap: 30px;
         padding-top: 60px;
+        padding-bottom: 60px;
     }
 }
 
