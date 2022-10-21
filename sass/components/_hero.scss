@@ -20,6 +20,10 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            width: 360px;
+        }
     }
 
     @include tablet {
@@ -42,3 +46,9 @@
         }
     }
 }
+
+// @media screen and (min-width: 768px) {
+//     .hero-title {
+//             width: 360px;
+//     }
+// }

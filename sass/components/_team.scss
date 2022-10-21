@@ -40,6 +40,7 @@
 .section-team {
     margin: auto;
     background-color: var(--btn-background);
+    padding-bottom: 94px;
 
     @media screen and (max-width: 1199px) {
         padding: 60px 0;
@@ -87,8 +88,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .team {
-        max-width: calc(50% - 60px);
-        margin: 30px;
+        max-width: calc(50% - 30px);
+        margin: 15px;
     }
 }
 

@@ -389,6 +389,11 @@ p {
   text-transform: uppercase;
 }
 @media screen and (min-width: 768px) {
+  .hero-title {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 768px) {
   .hero {
     background-image: url(../images/Img\ Overlay.svg), url("../img/Header img tabl x1.jpeg");
   }
@@ -441,7 +446,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 94px;
     padding-top: 94px;
     margin: 0 auto;
   }
@@ -451,9 +455,15 @@ p {
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .list-title h3 {
+    margin-bottom: 0;
+  }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .list-title h3 {
     font-weight: 700;
     font-size: 14px;
@@ -637,6 +647,7 @@ p {
 .section-team {
   margin: auto;
   background-color: var(--btn-background);
+  padding-bottom: 94px;
 }
 @media screen and (max-width: 1199px) {
   .section-team {
@@ -682,8 +693,8 @@ p {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team {
-    max-width: calc(50% - 60px);
-    margin: 30px;
+    max-width: calc(50% - 30px);
+    margin: 15px;
   }
 }
 .social {
@@ -1296,7 +1307,7 @@ p {
           transform: rotate(360deg);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-input {
     margin: 0 auto;
   }
@@ -1443,7 +1454,12 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
   }
